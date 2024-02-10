@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>12 Questions</title>
+</head>
+<body>
+    <div class="container">
+    
+    <div class="result">
+        <h class="header">My Answer:</h>
+        <h1 id="result" class="words"></h1>
+    </div>
+    <form>
+    <div class="answer">
+        <input type="text" id="res" class="input" name="text"><br><br><br><br><br><br>
+        <input type="button" name="submit" class="submit" id="button" onclick="answers();" value="Ask it"> 
+    </div>
+    <div class="quest">
+        <nav>
+        <input type="button" name="button" value="Q1" class="button" onclick="text.value = 'Pogi kaba?'">
+        <input type="button" name="button" value="Q2" class="button" onclick="text.value = 'ikaw bayan?'">
+        <input type="button" name="button" value="Q3" class="button" onclick="text.value = 'Bakit ka nag e-exist?'">
+        </nav>
+        <nav>
+        <input type="button" name="button" value="Q4" class="button" onclick="text.value = 'Sino crush mo 2023?'">
+        <input type="button" name="button" value="Q5" class="button" onclick="text.value = 'Anong Ulam mo kanina?'">
+        <input type="button" name="button" value="Q6" class="button" onclick="text.value = 'Favorite game 2023?'">
+        </nav>
+        <nav>
+        <input type="button" name="button" value="Q7" class="button" onclick="text.value = 'Sleep Time?'">
+        <input type="button" name="button" value="Q8" class="button" onclick="text.value = 'Favorite Place?'">
+        <input type="button" name="button" value="Q9" class="button" onclick="text.value = 'Tumae kana ba?'">
+        </nav>
+        <nav>
+        <input type="button" name="button" value="Q10" class="button1" onclick="text.value = 'Masaya kaba?'">
+        <input type="button" name="button" value="Q11" class="button1" onclick="text.value = 'Single or Taken?'">
+        <input type="button" name="button" value="Q12" class="button1" onclick="text.value = 'Your First Priority?'">
+    </nav>
+    </div>
+</form>
+</div>
+    <script type="text/JavaScript">
+        function answers() {
+            var result = document.getElementById("res").value
+
+            if (result == "Pogi kaba?") {
+                document.getElementById("result").innerHTML = "Oo, Sabi ng Mama ko, para sakin Oo mas pogi pa, Ewan ko nalang sa paningin ng iba.";
+            }
+            else if (result == "ikaw bayan?") {
+                document.getElementById("result").innerHTML = "I think, Yes.";
+            }
+            else if (result == "Bakit ka nag e-exist?") {
+                document.getElementById("result").innerHTML = "Para hanapin kung sino ako?.";
+            }
+            else if (result == "Sino crush mo 2023?") {
+                document.getElementById("result").innerHTML ="For now wala eheh, wala na ako Interest sa ganyan na.";
+            }
+            else if (result == "Anong Ulam mo kanina?") {
+                document.getElementById("result").innerHTML = "Sinigang na Bangus!, tra kain?.";
+            }
+            else if (result == "Favorite game 2023?") {
+                document.getElementById("result").innerHTML = "Wala masyado, kasi nag-quit muna ako. pero now nilalaro ko yung Ragnarok Origin Global.";
+            }
+            else if (result == "Sleep Time?") {
+                document.getElementById("result").innerHTML = "Hanggang 12:00am lang hangganan ko.";
+            }
+            else if (result == "Favorite Place?") {
+                document.getElementById("result").innerHTML = "Bahay, pero minsan sa bayan basta sunset.";
+            }
+            else if (result == "Tumae kana ba?") {
+                document.getElementById("result").innerHTML = "Yes?";
+            }
+            else if (result == "Masaya kaba?") {
+                document.getElementById("result").innerHTML = "Yes, wala ako paki sa Sad/Depression dko iniinda yun.";
+            }
+            else if (result == "Single or Taken?") {
+                document.getElementById("result").innerHTML = "Single!, pero taken sa programming. mahalaga kasi FUTURE.";
+            }
+            else if (result == "Your First Priority?") {
+                document.getElementById("result").innerHTML = "Pag-aaral at si mama syempre ♡";
+            }
+        }
+    </script>
+</body>
+</html>
